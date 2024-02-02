@@ -33,7 +33,7 @@ const handler = asyncError(async (req, res) => {
   const token = generateToken(user._id);
 
   cookieSetter(res, token, true);
-
+  console.log(user);
   res.status(201).json({
     success: true,
     message: "Registered Successfully",
