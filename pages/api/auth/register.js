@@ -36,7 +36,9 @@ const handler = asyncError(async (req, res) => {
   console.log(user);
   res.status(201).json({
     success: true,
-    message: "Registered Successfully",
+
+
+    message: "Registered Successfully done",
     user,
   });
 });
